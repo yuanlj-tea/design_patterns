@@ -11,6 +11,11 @@ namespace Allen\DesignPatterns\FactoryMethod;
 
 require_once __DIR__.'/../vendor/autoload.php';
 
+/**
+ * 工厂方法模式测试
+ * Class Client
+ * @package Allen\DesignPatterns\FactoryMethod
+ */
 class Client
 {
     public function bad()

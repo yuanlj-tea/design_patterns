@@ -10,6 +10,11 @@ namespace Allen\DesignPatterns\SimpleFactory;
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
+/**
+ * 简单工厂模式测试
+ * Class Client
+ * @package Allen\DesignPatterns\SimpleFactory
+ */
 class Client
 {
     /**
