@@ -9,7 +9,7 @@
 namespace Allen\DesignPatterns\AbstractFactory;
 
 
-class SqlLiteArticle implements User
+class SqlLiteArticle implements Article
 {
     public function insert()
     {

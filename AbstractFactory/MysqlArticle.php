@@ -9,7 +9,7 @@
 namespace Allen\DesignPatterns\AbstractFactory;
 
 
-class MysqlArticle implements User
+class MysqlArticle implements Article
 {
     public function insert()
     {

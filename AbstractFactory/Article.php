@@ -9,7 +9,9 @@
 namespace Allen\DesignPatterns\AbstractFactory;
 
 
-class Article implements User
+interface Article
 {
+    public function select();
 
+    public function insert();
 }
