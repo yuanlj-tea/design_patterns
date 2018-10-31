@@ -70,6 +70,6 @@ function p($data,$die = 0){
     print_r($data);
     echo '</pre>';
     if($die){
-        return;
+        die;
     }
 }

@@ -13,12 +13,12 @@ class MysqlUser implements User
 {
     public function select()
     {
-        echo '从MYSQL USER查询数据';
+        p('从MYSQL USER查询数据');
     }
 
     public function insert()
     {
-        echo '向MYSQL USER插入数据';
+        p('向MYSQL USER插入数据');
 
     }
 }

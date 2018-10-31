@@ -15,14 +15,13 @@ class Factory
 
     public function __construct()
     {
-        $dbConfig = include_once "./config.php";
+        $dbConfig = require "./config.php";  //这里如果require_once第二次实例化工厂类$this->db就是空字符串
         $this->db = $dbConfig['driver'];
 
     }
 
     public function createUser()
     {
-        p($this->db,1);
         switch ($this->db){
             case 'Mysql':
                 $obj = new MysqlUser();
@@ -31,7 +30,7 @@ class Factory
                 $obj = new SqlLiteUser();
                 break;
             default:
-                throw new \InvalidIndexSearchTextException('无效的参数');
+                throw new \InvalidArgumentException('无效的参数');
                 break;
         }
         return $obj;
@@ -47,7 +46,7 @@ class Factory
                 $obj = new SqlLiteArticle();
                 break;
             default:
-                throw new \InvalidIndexSearchTextException('无效的参数');
+                throw new \InvalidArgumentException('无效的参数');
                 break;
         }
 

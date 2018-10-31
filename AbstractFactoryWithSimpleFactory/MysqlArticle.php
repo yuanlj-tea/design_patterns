@@ -13,13 +13,13 @@ class MysqlArticle implements Article
 {
     public function select()
     {
-        echo '从MYSQL Article 查询数据';
+        p('从MYSQL Article 查询数据');
 
     }
 
     public function insert()
     {
-        echo '向MYSQL Article 插入数据';
+        p('向MYSQL Article 插入数据');
 
     }
 }

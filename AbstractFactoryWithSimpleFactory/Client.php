@@ -19,10 +19,10 @@ class Client
         $obj->select();
         $obj->insert();
 
-        $factory = new Factory();
-        $obj = $factory->createArticle();
-        $obj->select();
-        $obj->insert();
+        $factory1 = new Factory();
+        $obj1 = $factory1->createArticle();
+        $obj1->select();
+        $obj1->insert();
     }
 }
 
