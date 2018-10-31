@@ -1,59 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Diagram>
   <ID>PHP</ID>
-  <OriginalElement>/opt/wwwroot/design_patterns/AbstractFactory</OriginalElement>
+  <OriginalElement>C:/Windows/System32</OriginalElement>
   <nodes>
-    <node x="159.0" y="409.0">\Allen\DesignPatterns\AbstractFactory\MysqlArticle</node>
-    <node x="101.5" y="0.0">\Allen\DesignPatterns\AbstractFactory\Factory</node>
+    <node x="99.5" y="0.0">\Allen\DesignPatterns\AbstractFactory\Factory</node>
     <node x="0.0" y="542.0">\Allen\DesignPatterns\AbstractFactory\Client</node>
-    <node x="502.0" y="409.0">\Allen\DesignPatterns\AbstractFactory\MysqlUser</node>
-    <node x="0.0" y="409.0">\Allen\DesignPatterns\AbstractFactory\SqlLiteArticle</node>
-    <node x="203.0" y="138.0">\Allen\DesignPatterns\AbstractFactory\SqlLiteFactory</node>
+    <node x="76.5" y="271.0">\Allen\DesignPatterns\AbstractFactory\User</node>
+    <node x="484.0" y="409.0">\Allen\DesignPatterns\AbstractFactory\MysqlArticle</node>
+    <node x="199.0" y="138.0">\Allen\DesignPatterns\AbstractFactory\SqlLiteFactory</node>
+    <node x="153.0" y="409.0">\Allen\DesignPatterns\AbstractFactory\SqlLiteUser</node>
+    <node x="0.0" y="409.0">\Allen\DesignPatterns\AbstractFactory\MysqlUser</node>
+    <node x="331.0" y="409.0">\Allen\DesignPatterns\AbstractFactory\SqlLiteArticle</node>
     <node x="0.0" y="138.0">\Allen\DesignPatterns\AbstractFactory\MysqlFactory</node>
-    <node x="79.5" y="271.0">\Allen\DesignPatterns\AbstractFactory\Article</node>
-    <node x="343.0" y="409.0">\Allen\DesignPatterns\AbstractFactory\SqlLiteUser</node>
-    <node x="422.5" y="271.0">\Allen\DesignPatterns\AbstractFactory\User</node>
+    <node x="407.5" y="271.0">\Allen\DesignPatterns\AbstractFactory\Article</node>
   </nodes>
   <notes />
   <edges>
     <edge source="\Allen\DesignPatterns\AbstractFactory\MysqlUser" target="\Allen\DesignPatterns\AbstractFactory\User">
       <point x="0.0" y="-44.0" />
-      <point x="571.5" y="384.0" />
-      <point x="526.75" y="384.0" />
-      <point x="34.75" y="44.0" />
+      <point x="66.5" y="384.0" />
+      <point x="109.75" y="384.0" />
+      <point x="-33.25" y="44.0" />
     </edge>
     <edge source="\Allen\DesignPatterns\AbstractFactory\SqlLiteFactory" target="\Allen\DesignPatterns\AbstractFactory\Factory">
       <point x="0.0" y="-44.0" />
-      <point x="294.5" y="113.0" />
-      <point x="238.75" y="113.0" />
-      <point x="45.75" y="44.0" />
+      <point x="288.5" y="113.0" />
+      <point x="233.75" y="113.0" />
+      <point x="44.75" y="44.0" />
     </edge>
     <edge source="\Allen\DesignPatterns\AbstractFactory\SqlLiteArticle" target="\Allen\DesignPatterns\AbstractFactory\Article">
       <point x="0.0" y="-44.0" />
-      <point x="69.5" y="384.0" />
-      <point x="114.25" y="384.0" />
-      <point x="-34.75" y="44.0" />
+      <point x="397.5" y="384.0" />
+      <point x="440.75" y="384.0" />
+      <point x="-33.25" y="44.0" />
     </edge>
     <edge source="\Allen\DesignPatterns\AbstractFactory\SqlLiteUser" target="\Allen\DesignPatterns\AbstractFactory\User">
       <point x="0.0" y="-44.0" />
-      <point x="412.5" y="384.0" />
-      <point x="457.25" y="384.0" />
-      <point x="-34.75" y="44.0" />
+      <point x="219.5" y="384.0" />
+      <point x="176.25" y="384.0" />
+      <point x="33.25" y="44.0" />
     </edge>
     <edge source="\Allen\DesignPatterns\AbstractFactory\MysqlFactory" target="\Allen\DesignPatterns\AbstractFactory\Factory">
       <point x="0.0" y="-44.0" />
-      <point x="91.5" y="113.0" />
-      <point x="147.25" y="113.0" />
-      <point x="-45.75" y="44.0" />
+      <point x="89.5" y="113.0" />
+      <point x="144.25" y="113.0" />
+      <point x="-44.75" y="44.0" />
     </edge>
     <edge source="\Allen\DesignPatterns\AbstractFactory\MysqlArticle" target="\Allen\DesignPatterns\AbstractFactory\Article">
       <point x="0.0" y="-44.0" />
-      <point x="228.5" y="384.0" />
-      <point x="183.75" y="384.0" />
-      <point x="34.75" y="44.0" />
+      <point x="550.5" y="384.0" />
+      <point x="507.25" y="384.0" />
+      <point x="33.25" y="44.0" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="1.0" x="289.5" y="302.0" />
+  <settings layout="Hierarchic Group" zoom="1.0" x="290.0" y="302.0" />
   <SelectedNodes />
   <Categories>
     <Category>Fields</Category>
