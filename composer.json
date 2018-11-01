@@ -1,21 +1,21 @@
 {
-  "name": "Allen/design-patterns",
-  "description": "learn design patterns",
-  "type": "project",
-  "license": "MIT",
-  "authors": [
-    {
-      "name": "Allen",
-      "email": "1107806823@qq.com"
+    "name": "Allen/design-patterns",
+    "description": "learn design patterns",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Allen",
+            "email": "1107806823@qq.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Allen\\DesignPatterns\\": ""
+        },
+        "files": [
+            "helper.php"
+        ]
     }
-  ],
-  "require": {},
-  "autoload": {
-    "psr-4": {
-      "Allen\\DesignPatterns\\": ""
-    },
-    "files": [
-      "helper.php"
-    ]
-  }
 }
