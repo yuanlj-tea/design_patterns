@@ -16,7 +16,6 @@ class Adapter implements Target
 
     public function __construct(Adaptee $adaptee)
     {
-        pd($adaptee);
         $this->obj = $adaptee;
         $adaptee->money = '5美元';
     }
