@@ -8,8 +8,6 @@
 
 namespace Allen\DesignPatterns\Decorator;
 
-use Allen\DesignPatterns\Bridge\Square;
-
 require __DIR__ . '/../vendor/autoload.php';
 
 /**
