@@ -73,3 +73,10 @@ function p($data,$die = 0){
         die;
     }
 }
+
+function hoops(){
+    // whoops: php errors for cool kids
+    $whoops = new \Whoops\Run;
+    $whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
+    $whoops->register();
+}

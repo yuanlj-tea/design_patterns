@@ -9,7 +9,10 @@
             "email": "1107806823@qq.com"
         }
     ],
-    "require": {},
+    "require": {
+        "monolog/monolog": "^1.23",
+        "filp/whoops": "^2.3"
+    },
     "autoload": {
         "psr-4": {
             "Allen\\DesignPatterns\\": ""
