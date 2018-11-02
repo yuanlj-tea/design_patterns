@@ -11,7 +11,7 @@ namespace Allen\DesignPatterns\SafeComposite;
 require __DIR__.'/../vendor/autoload.php';
 
 /**
- * 透明组合模式
+ * 安全组合模式
  * Class Index
  * @package Allen\DesignPatterns\SafeComposite
  */
