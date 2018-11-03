@@ -10,6 +10,11 @@ namespace Allen\DesignPatterns\AbstractFactoryWithReflection;
 
 require __DIR__.'/../vendor/autoload.php';
 
+/**
+ * 用反射优化抽象工厂模式
+ * Class Client
+ * @package Allen\DesignPatterns\AbstractFactoryWithReflection
+ */
 class Client
 {
     public function run()

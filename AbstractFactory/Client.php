@@ -10,6 +10,11 @@ namespace Allen\DesignPatterns\AbstractFactory;
 
 require_once __DIR__.'/../vendor/autoload.php';
 
+/**
+ * 抽象工厂模式
+ * Class Client
+ * @package Allen\DesignPatterns\AbstractFactory
+ */
 class Client
 {
     public function run()

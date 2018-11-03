@@ -11,7 +11,11 @@ namespace Allen\DesignPatterns\Flyweight;
 require __DIR__.'/../vendor/autoload.php';
 
 
-
+/**
+ * 享元模式
+ * Class Index
+ * @package Allen\DesignPatterns\Flyweight
+ */
 class Index
 {
     public function run()

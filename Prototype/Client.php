@@ -10,6 +10,11 @@ namespace Allen\DesignPatterns\Prototype;
 
 require __DIR__.'/../vendor/autoload.php';
 
+/**
+ * 原型模式
+ * Class Client
+ * @package Allen\DesignPatterns\Prototype
+ */
 class Client
 {
     public function shallowCopy()

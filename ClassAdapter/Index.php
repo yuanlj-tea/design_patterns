@@ -10,6 +10,11 @@ namespace Allen\DesignPatterns\ClassAdapter;
 
 require __DIR__."/../vendor/autoload.php";
 
+/**
+ * 类适配器模式
+ * Class Index
+ * @package Allen\DesignPatterns\ClassAdapter
+ */
 class Index
 {
     public function run()
