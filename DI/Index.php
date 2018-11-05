@@ -58,9 +58,14 @@ class Index
 
 hoops();
 
-$obj = new Index();
-$obj->run();
+//$obj = new Index();
+//$obj->run();
+//
+//$obj->runTest();
+//
+//$obj->runClosure();
 
-$obj->runTest();
-
-$obj->runClosure();
+$ref = new \ReflectionClass('\Allen\DesignPatterns\DI\Index');
+$instance = $ref->newInstanceArgs(array($ref));
+$instance->run();
+p($instance,1);
