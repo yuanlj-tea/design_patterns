@@ -2,17 +2,17 @@
 /**
  * Created by PhpStorm.
  * User: allen
- * Date: 2018/11/4
- * Time: 9:10 PM
+ * Date: 2018/11/5
+ * Time: 12:26 AM
  */
 
 namespace Allen\DesignPatterns\DI;
 
 
-class C extends Base
+class Test
 {
     public function test()
     {
-        p('this is C!');
+        p('this is Test->test方法');
     }
 }
