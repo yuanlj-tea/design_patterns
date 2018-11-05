@@ -8,6 +8,10 @@
 
 require __DIR__ . '/../vendor/autoload.php';
 
+/**
+ * laravel请求管道处理
+ * Interface Step
+ */
 interface Step
 {
     public static function go(Closure $next);
