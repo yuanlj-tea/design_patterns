@@ -46,11 +46,13 @@ PHP设计模式学习
 
 [16.1、依赖注入、控制反转](https://gitee.com/Alex-e/design_patterns/tree/master/Ioc)
 
-[17、laravel请求管道处理](https://gitee.com/Alex-e/design_patterns/tree/master/LaravelRequestQueue)
+[17、laravel请求管道处理简化版](https://gitee.com/Alex-e/design_patterns/tree/master/LaravelRequestQueue)
 
 [18、观察者模式](https://gitee.com/Alex-e/design_patterns/tree/master/Observer)
 
 [19、策略模式](https://gitee.com/Alex-e/design_patterns/tree/master/Strategy)
+
+[20、laravel请求管道处理](https://gitee.com/Alex-e/design_patterns/tree/master/LaravelRequestQueue1)
 
 
 

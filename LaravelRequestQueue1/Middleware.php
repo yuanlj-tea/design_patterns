@@ -10,5 +10,5 @@ namespace Allen\DesignPatterns\LaravelRequestQueue1;
 
 interface Middleware
 {
-    public static function handle();
+    public static function handle(\Closure $next);
 }

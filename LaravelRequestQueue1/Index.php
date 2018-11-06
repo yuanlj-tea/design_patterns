@@ -40,7 +40,6 @@ function then()
     $pipes = array_map(function($v){
         return '\Allen\DesignPatterns\LaravelRequestQueue1\\'.$v;
     },$pipes);
-//p($pipes,1);
 
     hoops();
 
