@@ -43,9 +43,13 @@ function then()
 
     hoops();
 
-    call_user_func(
+    /*call_user_func(
         array_reduce($pipes,getSlice(),$firstSlice)
-    );
+    );*/
+
+    $go = array_reduce($pipes,getSlice(),$firstSlice);
+
+    $go();
 }
 
 then();
