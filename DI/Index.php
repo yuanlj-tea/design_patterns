@@ -12,6 +12,9 @@ require __DIR__ . '/../vendor/autoload.php';
 
 /**
  * 依赖注入,控制反转
+ * 参考资料：https://laravelacademy.org/post/769.html
+ * https://blog.csdn.net/bestone0213/article/details/47424255
+ * https://www.cnblogs.com/painsOnline/p/5138806.html
  * Class Index
  * @package Allen\DesignPatterns\DI
  */
@@ -58,14 +61,15 @@ class Index
 
 hoops();
 
-//$obj = new Index();
-//$obj->run();
-//
-//$obj->runTest();
-//
-//$obj->runClosure();
+$obj = new Index();
 
-$ref = new \ReflectionClass('\Allen\DesignPatterns\DI\Index');
-$instance = $ref->newInstanceArgs(array($ref));
-$instance->run();
-p($instance,1);
+$obj->run();
+
+$obj->runTest();
+
+$obj->runClosure();
+
+//$ref = new \ReflectionClass('\Allen\DesignPatterns\DI\Index');
+//$instance = $ref->newInstanceArgs(array($ref));
+//$instance->run();
+//p($instance,1);
