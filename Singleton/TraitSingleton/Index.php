@@ -14,6 +14,11 @@ class Index
 {
     use Sinleton;
 
+    public function __construct(...$args)
+    {
+        p($args);
+    }
+
     public function test()
     {
         p('trait singleton');
@@ -22,5 +27,5 @@ class Index
 
 hoops();
 
-$obj = Index::getInstance();
+$obj = Index::getInstance('test',['test']);
 $obj->test();
