@@ -25,36 +25,43 @@ class Index
     private $_namespace = '\\'.__NAMESPACE__.'\\';
 
     // 容器类
-    protected $continer;
+    protected $container;
 
     public function __construct()
     {
-        $this->continer = new Container();
+        $this->container = new Container();
     }
 
     public function run()
     {
-        $a = $this->continer->get($this->_namespace.'A');
+        //$a = $this->continer->get($this->_namespace.'A');
+        $a = $this->container->get(A::class);
         $a->test();
+        // $a->callA();
+
+        $b = $this->container->get(B::class);
+        $b->callB();
     }
 
     public function runTest()
     {
-        $this->continer->set('Test',new Test());
 
-        $test = $this->continer->get('Test');
+
+        $this->container->set('Test',new Test());
+
+        $test = $this->container->get('Test');
         $test->test();
     }
 
     public function runClosure()
     {
-        $this->continer->set('foo',function($container,$params,$config){
+        $this->container->set('foo',function($container,$params,$config){
             pp($container);
             p($params);
             p($config);
         });
 
-        $this->continer->get('foo',['name'=>'foo'],['key'=>'test']);
+        $this->container->get('foo',['name'=>'foo'],['key'=>'test']);
     }
 
 }
