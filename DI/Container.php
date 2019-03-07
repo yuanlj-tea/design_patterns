@@ -55,7 +55,7 @@ class Container
      */
     public function get($class, $params = array(), $properties = array())
     {
-        if (!isset($this->_definitions[$class])) {//如果重来没有声明过 则直接创建
+        if (!isset($this->_definitions[$class])) {//如果从来没有声明过 则直接创建
             return $this->bulid($class, $params, $properties);
         }
 
@@ -66,10 +66,10 @@ class Container
             $obj = call_user_func($defination, $this, $params, $properties);
         } elseif (is_array($defination)) {
             $originalClass = $defination['class'];
-            unset($definition['class']);
+            unset($defination['class']);
 
             //difinition中除了'class'元素外 其他的都当做实例的属性处理
-            $properties = array_merge((array)$definition, $properties);
+            $properties = array_merge((array)$defination, $properties);
 
             //合并该类、函数声明时的参数
             $params = $this->mergeParams($class, $params);

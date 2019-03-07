@@ -22,4 +22,9 @@ class A extends Base
     {
         $this->instanceB->test();
     }
+
+    public function callA()
+    {
+        p(sprintf("this is %s class , %s action",__CLASS__,__FUNCTION__));
+    }
 }
