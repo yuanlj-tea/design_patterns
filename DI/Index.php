@@ -40,9 +40,10 @@ class Index
 
     public function runTest()
     {
-        $this->continer->set('Test',new Test());
+        // $this->continer->set('Test',new Test());
+        // $test = $this->continer->get('Test');
 
-        $test = $this->continer->get('Test');
+        $test = $this->continer->get(Test::class);
         $test->test();
     }
 
