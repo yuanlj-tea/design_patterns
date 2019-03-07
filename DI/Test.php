@@ -11,8 +11,16 @@ namespace Allen\DesignPatterns\DI;
 
 class Test
 {
+    private $name;
+
+    public function __construct($name)
+    {
+        $this->name = $name;
+    }
+
     public function test()
     {
+        p($this->name);
         p('this is Test->test方法');
     }
 }

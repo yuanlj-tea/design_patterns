@@ -46,10 +46,10 @@ class Index
     public function runTest()
     {
 
-        // $this->continer->set('Test',new Test());
+        // $this->continer->set('Test',new Test('张三'));
         // $test = $this->continer->get('Test');
 
-        $test = $this->continer->get(Test::class);
+        $test = $this->container->get(Test::class,array('张三'));
         $test->test();
     }
 
@@ -70,11 +70,11 @@ hoops();
 
 $obj = new Index();
 
-$obj->run();
+// $obj->run();
 
 $obj->runTest();
 
-$obj->runClosure();
+// $obj->runClosure();
 
 //$ref = new \ReflectionClass('\Allen\DesignPatterns\DI\Index');
 //$instance = $ref->newInstanceArgs(array($ref));
