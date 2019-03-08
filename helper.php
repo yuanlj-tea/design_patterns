@@ -66,9 +66,9 @@ function pp(...$param){
 }
 
 function p($data,$die = 0){
-    echo '<pre>';
+    echo is_cli() ? "\n" : '<pre>';
     print_r($data);
-    echo '</pre>';
+    echo is_cli() ? "\n" : '</pre>';
     if($die){
         die;
     }
@@ -79,4 +79,14 @@ function hoops(){
     $whoops = new \Whoops\Run;
     $whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
     $whoops->register();
+}
+
+if(!function_exists('is_cli')){
+    /*
+    判断当前的运行环境是否是cli模式
+    */
+    function is_cli()
+    {
+        return preg_match("/cli/i", php_sapi_name()) ? true : false;
+    }
 }
