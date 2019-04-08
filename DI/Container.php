@@ -9,11 +9,15 @@
 namespace Allen\DesignPatterns\DI;
 
 
+use Allen\DesignPatterns\Singleton\TraitSingleton\Sinleton;
+
 /**
  *    依赖注入类
  */
 class Container
 {
+    use Sinleton;
+
     /**
      * @var array 存储各个类的定义  以类的名称为键
      */
@@ -81,7 +85,7 @@ class Container
         } elseif (is_object($defination)) {//如果是个对象 直接返回
             return $defination;
         } else {
-            throw new Exception($class . ' 声明错误!');
+            throw new \Exception($class . ' 声明错误!');
         }
         return $obj;
     }
@@ -131,7 +135,7 @@ class Container
             }
             return $defination;
         }
-        throw new Exception($class . ' 声明错误');
+        throw new \Exception($class . ' 声明错误');
     }
 
     /**
@@ -211,7 +215,7 @@ class Container
                     $parameters = $reflection->getConstructor()->getParameters();
                     $name = $parameters[$index]->getName();
                     $class = $reflection->getName();
-                    throw new Exception('实例化类 ' . $class . ' 时缺少必要参数:' . $name);
+                    throw new \Exception('实例化类 ' . $class . ' 时缺少必要参数:' . $name);
                 }
             }
         }

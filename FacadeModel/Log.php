@@ -11,8 +11,16 @@ namespace Allen\DesignPatterns\FacadeModel;
 
 class Log
 {
+    protected $params;
+
+    public function __construct(...$params)
+    {
+        $this->params = $params;
+    }
+
     public function info(...$params)
     {
+        pp($this->params);
         print_r($params);
     }
 }

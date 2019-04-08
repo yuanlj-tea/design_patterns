@@ -10,6 +10,11 @@ namespace Allen\DesignPatterns\FacadeModel\Facades;
 
 class Log extends Facade
 {
+    protected static function initArgs()
+    {
+        return ['a', 'b'];
+    }
+
     protected static function getFacadeAccessor()
     {
         return \Allen\DesignPatterns\FacadeModel\Log::class;

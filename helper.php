@@ -14,7 +14,7 @@
  * @return void
  */
 function pd(...$param){
-    echo '<style>.php-print{background:#eee;padding:10px;border-radius:4px;border:1px solid #ccc;line-height:1.5;white-space:pre-wrap;font-family:Menlo,Monaco,Consolas,"Courier New",monospace;font-size:13px;}</style>', '<pre class="php-print">';
+    echo is_cli() ? "\n" : '<pre>';
 
     if(end($param) === .1){
         array_splice($param, -1, 1);
@@ -32,7 +32,7 @@ function pd(...$param){
             echo $k>0 ? '<hr>' : '', print_r($v, true); // echo 逗号速度快 https://segmentfault.com/a/1190000004679782
         }
     }
-    echo '</pre>';
+    echo is_cli() ? "\n" : '</pre>';
     die;
 }
 
@@ -44,7 +44,7 @@ function pd(...$param){
  * @return void
  */
 function pp(...$param){
-    echo '<style>.php-print{background:#eee;padding:10px;border-radius:4px;border:1px solid #ccc;line-height:1.5;white-space:pre-wrap;font-family:Menlo,Monaco,Consolas,"Courier New",monospace;font-size:13px;}</style>', '<pre class="php-print">';
+    echo is_cli() ? "\n" : '<pre>';
 
     if(end($param) === .1){
         array_splice($param, -1, 1);
@@ -62,8 +62,9 @@ function pp(...$param){
             echo $k>0 ? '<hr>' : '', print_r($v, true); // echo 逗号速度快 https://segmentfault.com/a/1190000004679782
         }
     }
-    echo '</pre>';
+    echo is_cli() ? "\n" : '</pre>';
 }
+
 
 function p($data,$die = 0){
     echo is_cli() ? "\n" : '<pre>';
