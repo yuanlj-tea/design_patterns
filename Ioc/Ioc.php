@@ -23,7 +23,7 @@ class Ioc
     {
 
         $paramArr = self::getMethodParams($className);
-//pd($paramArr,.1);
+
         return (new ReflectionClass($className))->newInstanceArgs($paramArr);
     }
 
