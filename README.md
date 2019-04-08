@@ -35,6 +35,8 @@ PHP设计模式学习
 
 [12、外观模式](https://gitee.com/Alex-e/design_patterns/tree/master/Facade)
 
+[12、门面模式](https://gitee.com/Alex-e/design_patterns/tree/master/FacadeModel)
+
 [13、享元模式](https://gitee.com/Alex-e/design_patterns/tree/master/Flyweight)
 
 [14、代理模式](https://gitee.com/Alex-e/design_patterns/tree/master/Proxy)
