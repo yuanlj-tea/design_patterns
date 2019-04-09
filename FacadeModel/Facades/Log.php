@@ -10,6 +10,10 @@ namespace Allen\DesignPatterns\FacadeModel\Facades;
 
 class Log extends Facade
 {
+    /**
+     * 传入真实Log类的构造函数的参数
+     * @return array
+     */
     protected static function initArgs()
     {
         return ['a', 'b'];
