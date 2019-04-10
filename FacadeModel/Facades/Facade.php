@@ -25,7 +25,7 @@ abstract class Facade
         return [];
     }
 
-    public static function __callStatic($className, $params)
+    public static function __callStatic($method, $params)
     {
         // $cl = static::getFacadeAccessor();
         // if(!isset(self::$accessor[$cl])){
@@ -36,7 +36,7 @@ abstract class Facade
         //使用IOC容器
         $cl = static::getFacadeAccessor();
         $container = Container::getInstance();
-        return $container->get($cl, static::initArgs())->$className(...$params);
+        return $container->get($cl, static::initArgs())->$method(...$params);
     }
 
     public function clear($class)
