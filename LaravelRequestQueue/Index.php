@@ -27,6 +27,15 @@ class FirstStep implements Step
     }
 }
 
+class SecondStep implements Step{
+    public static function go(Closure $next)
+    {
+        p("执行第二步");
+        $next();
+        p("第二步执行结束");
+    }
+}
+
 function goFun($step, $className)
 {
     return function () use ($step, $className) {
@@ -36,11 +45,11 @@ function goFun($step, $className)
 
 function then()
 {
-    $steps = ['FirstStep'];
+    $steps = ['FirstStep','SecondStep'];
     $prepare = function () {
         p('请求向路由器传递，返回响应');
     };
-    $go = array_reduce($steps, 'goFun', $prepare);
+    $go = array_reduce(array_reverse($steps), 'goFun', $prepare);
     $go();
 }
 
