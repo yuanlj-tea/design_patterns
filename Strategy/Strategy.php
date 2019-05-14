@@ -18,7 +18,7 @@ class Strategy
         try{
             $class = new \ReflectionClass($itemName);
             $this->item = $class->newInstance();
-//            pd($this->item,.1);
+
         }catch(\ReflectionException $e){
             throw new \ReflectionException($e->getMessage());
 //            throw new \Exception($e->getMessage());
