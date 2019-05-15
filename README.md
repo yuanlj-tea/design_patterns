@@ -41,6 +41,8 @@ PHP设计模式学习
 
 [14、代理模式](https://gitee.com/Alex-e/design_patterns/tree/master/Proxy)
 
+[14.1、代理模式](https://gitee.com/Alex-e/design_patterns/tree/master/ProxyModel)
+
 [15、模板方法模式](https://gitee.com/Alex-e/design_patterns/tree/master/Template)
 
 
@@ -53,6 +55,8 @@ PHP设计模式学习
 [18、观察者模式](https://gitee.com/Alex-e/design_patterns/tree/master/Observer)
 
 [19、策略模式](https://gitee.com/Alex-e/design_patterns/tree/master/Strategy)
+
+[19.1、策略模式](https://github.com/a1554610616/design_patterns/tree/master/StrategyModel)
 
 [20、laravel请求管道处理](https://gitee.com/Alex-e/design_patterns/tree/master/LaravelRequestQueue1)
 
