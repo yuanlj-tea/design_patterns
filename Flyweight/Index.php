@@ -5,11 +5,11 @@
  * Date: 2018/11/2
  * Time: 20:21
  */
-
 namespace Allen\DesignPatterns\Flyweight;
 
 require __DIR__.'/../vendor/autoload.php';
 
+// ini_set("display_errors","on");
 
 /**
  * 享元模式
@@ -43,7 +43,7 @@ class Index
 
     }
 }
-hoops();
+// hoops();
 
 $obj = new Index();
 $obj->run();

@@ -22,8 +22,5 @@ abstract class Flyweight
         $this->name = $name;
     }
 
-    public function show()
-    {
-
-    }
+    abstract public function show($content);
 }
