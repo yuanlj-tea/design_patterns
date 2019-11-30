@@ -21,6 +21,7 @@ class FirstStep implements Step
 {
     public static function go(Closure $next)
     {
+        // pp($next,.1);
         p('开启session，获取数据');
         $next();
         p('保存数据，关闭session');
@@ -30,6 +31,7 @@ class FirstStep implements Step
 class SecondStep implements Step{
     public static function go(Closure $next)
     {
+        // pp($next,.1);
         p("执行第二步");
         $next();
         p("第二步执行结束");
