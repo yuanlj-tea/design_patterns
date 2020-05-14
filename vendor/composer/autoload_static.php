@@ -23,6 +23,11 @@ class ComposerStaticInit493f686eeb231a570e5045ab45941c88
         array (
             'Monolog\\' => 8,
         ),
+        'D' => 
+        array (
+            'Doctrine\\Common\\Lexer\\' => 22,
+            'Doctrine\\Common\\Annotations\\' => 28,
+        ),
         'A' => 
         array (
             'Allen\\DesignPatterns\\' => 21,
@@ -41,6 +46,14 @@ class ComposerStaticInit493f686eeb231a570e5045ab45941c88
         'Monolog\\' => 
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
+        ),
+        'Doctrine\\Common\\Lexer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/lexer/lib/Doctrine/Common/Lexer',
+        ),
+        'Doctrine\\Common\\Annotations\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/annotations/lib/Doctrine/Common/Annotations',
         ),
         'Allen\\DesignPatterns\\' => 
         array (
