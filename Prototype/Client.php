@@ -54,6 +54,6 @@ class Client
 }
 
 $cli = new Client();
-//$cli->shallowCopy();
+$cli->shallowCopy();
 
-$cli->deepCopy();
+// $cli->deepCopy();

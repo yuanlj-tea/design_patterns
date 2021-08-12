@@ -30,7 +30,7 @@ class DeepDrive
 
     public function __clone()
     {
-//        $this->car = clone $this->car;
+       $this->car = clone $this->car;
     }
 
 
