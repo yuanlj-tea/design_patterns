@@ -61,7 +61,7 @@ PHP设计模式学习
 [20、laravel请求管道处理](https://gitee.com/Alex-e/design_patterns/tree/master/LaravelRequestQueue1)
 
 
-
+[21、职责链模式](https://github.com/yuanlj-tea/design_patterns/tree/master/HandlerChain)
 
 
 
