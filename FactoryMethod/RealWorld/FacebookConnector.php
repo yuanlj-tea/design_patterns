@@ -28,6 +28,6 @@ class FacebookConnector implements SocialNetworkConnector
 
     public function createPost($content): void
     {
-        echo "Send HTTP API requests to create a post in Facebook timeline.\n";
+        echo "Send HTTP API requests to create a post in Facebook timeline.\n" . $content . "\n";
     }
 }
