@@ -64,6 +64,7 @@ PHP设计模式学习
 [21、职责链模式](https://github.com/yuanlj-tea/design_patterns/tree/master/HandlerChain)
 
 
+[适配器模式](https://github.com/yuanlj-tea/design_patterns/tree/master/Adapter)
 
 
 
