@@ -1,0 +1,2 @@
+2022-08-30 09:53:05: 'users:created' with data '{"attributes":{"name":"John Smith","email":"john99@example.com","id":"039f2738893cc607eedef0dc34151d54"}}'
+2022-08-30 09:53:05: 'users:deleted' with data '{"attributes":{"name":"John Smith","email":"john99@example.com","id":"039f2738893cc607eedef0dc34151d54"}}'
